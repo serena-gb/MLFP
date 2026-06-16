@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local outputs
+outputs/
+results/
+figures/
+*.log
+
+# Large/generated research assets
+encodings/
+checkpoints/
+*.pt
+*.pth
+*.npy
+*.npz
+*.parquet
+*.xlsx
+
+# Non-public workspace artifacts
+Literature Review - All .pdfs/
+Literature Review Summaries/
+Misc. Docs/
+Presentations/
+Written Work/
+*.pdf
+*.docx
+*.pptx
+*.epub
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

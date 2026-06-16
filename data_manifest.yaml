@@ -1,0 +1,43 @@
+version: 1
+tracked_assets:
+  - id: wt_fasta
+    path: data/avGFP_WT.fasta
+    description: avGFP wild-type amino-acid sequence.
+    required_for: [data-audit, benchmark-controlled]
+  - id: single_mutants
+    path: data/avGFP_single_mutants.csv
+    description: Curated single-mutant activity table.
+    required_for: [data-audit, benchmark-controlled]
+  - id: zscale
+    path: data/descriptors/ZSCALE.csv
+    description: Z-scale amino-acid descriptor table.
+    required_for: [benchmark-controlled]
+  - id: vhse
+    path: data/descriptors/VHSE_descriptor.csv
+    description: VHSE amino-acid descriptor table.
+    required_for: [optional_features]
+external_assets:
+  - id: full_dms
+    path: data/external/avGFP_full_dms.parquet
+    description: Full avGFP DMS cache generated from the original Sarkisyan et al. data.
+    status: not_tracked
+  - id: rosetta_features
+    path: data/external/rosetta_features.parquet
+    description: Rosetta feature table extracted from the METL avGFP database.
+    status: not_tracked
+  - id: esm2_150m_embeddings
+    path: data/external/encodings/avGFP_esm2_t30_150M_UR50D.csv
+    description: Mean-pooled ESM-2 150M embeddings.
+    status: not_tracked
+  - id: esm2_650m_embeddings
+    path: data/external/encodings/avGFP_esm2_t33_650M_UR50D.csv
+    description: Mean-pooled ESM-2 650M embeddings.
+    status: not_tracked
+  - id: metl_checkpoint
+    path: data/external/checkpoints/METL-L-2M-3D-GFP-Hr4GNHws.pt
+    description: METL-L checkpoint from the METL project.
+    status: not_tracked
+generated_outputs:
+  - outputs/
+  - results/
+  - figures/

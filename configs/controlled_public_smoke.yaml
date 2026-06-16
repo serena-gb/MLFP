@@ -1,0 +1,19 @@
+dataset:
+  wt_sequence_path: data/avGFP_WT.fasta
+  labels_path: data/avGFP_single_mutants.csv
+  activity_column: activity
+  variant_column: variant
+  max_variants: null
+features:
+  zscale_path: data/descriptors/ZSCALE.csv
+  rosetta_path: data/external/rosetta_features.parquet
+benchmark:
+  approaches: [zscale_delta]
+  training_sizes: [24, 48, 96]
+  n_seeds: 3
+  test_fraction: 0.2
+  split_seed: 0
+  model: ridge
+  min_asset_coverage: 0.95
+output:
+  directory: outputs/controlled_public_smoke

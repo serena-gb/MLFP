@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Controlled avGFP Biophysical Augmentation Benchmarks"
+message: "If you use this repository, please cite it and the original avGFP DMS and method papers referenced in the documentation."
+type: software
+authors:
+  - family-names: Ganbaatar
+    given-names: Serena
+date-released: 2026-06-16
+version: 0.1.0
+license: MIT
